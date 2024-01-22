@@ -1,5 +1,6 @@
 import bannerImg from "../../assets/img/bannerImg.png";
 import { motion } from "framer-motion";
+import AnimatedText from "../components/AnimatedText";
 const Banner = () => {
     const containerAnimation = {
         hidden:{
@@ -34,10 +35,12 @@ const Banner = () => {
     variants={containerAnimation}
     initial="hidden"
     animate="visible"
-    className="flex justify-around items-center h-screen ">
+    className="flex justify-between items-center h-screen ">
       <div >
+      <AnimatedText></AnimatedText>
         <h2 className="text-[40px]">
-          Hi im <span className="text-[#4379FB]"> Mohon!</span>
+          {/* Hi im <span className="text-[#4379FB]"> Mohon!</span> */}
+         
         </h2>
         <p className="text-[50px] font-bold text-[#4379FB]">
           Product designer{" "}

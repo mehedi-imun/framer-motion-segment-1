@@ -43,8 +43,8 @@ const MyWork = () => {
 
     },[inView])
     return (
-        <div ref={ref}>
-            <motion.div  variants={containerAnimation} animate={sectionControl} initial="hidden"  className="space-y-3 mb-10 max-w-6xl mx-auto">
+        <div ref={ref} >
+            <motion.div  variants={containerAnimation} animate={sectionControl} initial="hidden"  className="space-y-3 mb-10 ">
             <img className="w-full" src={myWork} alt="" />
             <h1 className="text-[#4379FB] text-[26px]">Programming Hero</h1>
             <h3 className="text-[#22241B] text-[32px] font-medium">Website Ui Design for Programming Hero</h3>
